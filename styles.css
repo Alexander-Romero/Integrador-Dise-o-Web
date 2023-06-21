@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Hind
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2? family= Hind:wght@300;400;500;600;700 & family= Montserrat:ital,wght@0,400;0,500;0,700; 1,700;1,800 & mostrar=cambiar');
+  body {
+    background: #115959;
+  }
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    height: 150px;
+    width: 100%vh;
+    background-color: #0A0C0D;
+    flex-direction: column;
+}
+
+.navbar-top {
+    display: flex;
+    height: 100px;
+    width: 100%vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-bot {
+    display: flex;
+    height: 50px;
+    width: 100%vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 100px;
+    width: 25%;
+    padding: 10px;
+}
+
+.logo {
+    height: 80px;
+    width: 80%;
+    background: no-repeat center/cover;
+}
+
+.navbar-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 40%;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.search-input {
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+.search-btn {
+    border: 0;
+    outline: 0;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-btn img {
+    border: 0;
+    outline: 0;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+}
+
+.navbar-list {
+    height: 100px;
+    width: 25%;
+    padding: 10px;
+}
+
+.navbar-list ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.item-navbar-list {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #30F2CF;
+    background: #272e31;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* .list-categorys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-categorys a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+} */
+
+.list-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.item-list-scroll  {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 30px 80px;
+    gap: 100px;
+}
