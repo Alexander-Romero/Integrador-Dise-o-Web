@@ -7,10 +7,26 @@
     font-family: Hind, sans-serif
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
   @import url('https://fonts.googleapis.com/css2? family= Hind:wght@300;400;500;600;700 & family= Montserrat:ital,wght@0,400;0,500;0,700; 1,700;1,800 & mostrar=cambiar');
-  body {
-    background: #115959;
+
+  :root {
+    /* background colors */
+    --background: #02050e;
+    --secondary: #272d37;
+    --terciary: #052ea0;
+    --nav-bg: #0f1525;
+    /* Text colors */
+    --text-color: #30F2CF;
+    --text-white: #f3f4f6;
+  
+    /* Decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
   }
 
 /* NAVBAR */
@@ -18,14 +34,14 @@
     display: flex;
     height: 150px;
     width: 100%vh;
-    background-color: #0A0C0D;
+    background-color: #0f1525;
     flex-direction: column;
 }
 
 .navbar-top {
     display: flex;
     height: 100px;
-    width: 100%vh;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -40,14 +56,11 @@
 
 .navbar-logo {
     height: 100px;
-    width: 25%;
+    width: 30%;
     padding: 10px;
-}
-
-.logo {
-    height: 80px;
-    width: 80%;
-    background: no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-search {
@@ -106,7 +119,6 @@
     font-size: 20px;
     font-weight: 600;
     color: #30F2CF;
-    background: #272e31;
     padding: 10px;
     border-radius: 10px;
 }
@@ -137,19 +149,33 @@
     font-weight: 700;
 }
 
+/* Main */
+main {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
 /* HERO */
 .hero {
-    width: 100%;
-    height: 500px;
+    width: 90%;
+    height: 600px;
+    margin: 50px 0px;
+    background: var(--secondary);
+    border-radius: 20px;
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding: 40px 80px;
+    padding: 30px;
     gap: 100px;
 }
 
 .hero-info {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +185,7 @@
 
 .hero-h1 {
     font-family: Montserrat, sans-serif;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     color: #30F2CF;
 }
@@ -189,7 +215,7 @@
 }
 
 .hero-video {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,28 +226,125 @@
 }
 
 /* BENEFICIOS */
-.beneficios {
-    width: 100%;
-    height: 500px;
+.sect-beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    margin: 50px 0px;
+    border-radius: 20px;
+    background: var(--secondary);
+    height: 700px;
     padding: 40px 40px;
+    gap: 20px;
+}
+
+.sect-beneficios h2 {
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.beneficios {
     display: flex;
     justify-content: space-between;
 }
 
+
 .beneficio {
     width: 20%;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    background-color: #272e31;
+    padding: 20px;
+    background-color: var(--terciary);
     border-radius: 15px;
 }
 
 .beneficio h2 {
     font-family: Montserrat, sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
-    color: #fff;
+    color: var(--text-color);
+}
+
+.beneficio p {
+    color: var(--text-white);
+    font-size: 24px;
+}
+
+/* Productos Destacados */
+.sect-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90%;
+    margin: 50px 0px;
+    border-radius: 20px;
+    background: var(--secondary);
+    height: 800px;
+    padding: 40px 40px;
+    gap: 20px;
+}
+
+.sect-productos h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.productos-top, .productos-bot {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+.productos-objeto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: var(--terciary); */
+    padding: 10px;
+    gap: 10px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+.descrip-objeto {
+    color: var(--text-white);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.precio-objeto {
+    color: var(--fire);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn-objeto {
+    width: 150px;
+    height: 150px;
+    background: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.btn-objeto a {
+    color: black;
+    font-weight: 600;
 }

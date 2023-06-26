@@ -11,7 +11,7 @@
         <nav class="navbar">
         <div class="navbar-top">
             <div class="navbar-logo">
-                <img src="./imagenes/Logo1.png" alt="logo" class="logo">
+                <img src="./imagenes/Logo1.png"  alt="logo" class="logo">
             </div>
 
             <div class="navbar-search">
@@ -33,7 +33,7 @@
                 <ul class="list-scroll">
                     <li><a href="#Home" class="item-list-scroll">Home</a></li>
                     <li><a href="#Beneficios" class="item-list-scroll">Beneficios</a></li>
-                    <li><a href="#" class="item-list-scroll">Productos</a></li>
+                    <li><a href="#Productos" class="item-list-scroll">Productos</a></li>
                     <li><a href="#" class="item-list-scroll">Contacto</a></li>
                 </ul>
             </div>
@@ -55,10 +55,12 @@
     </header>
     
     <main>
-        <div class="hero" #Home>
+        <div class="hero" id="Home">
             <div class="hero-info">
                 <h1 class="hero-h1">¡ARMAMOS TU PC!</h1>
-                <p class="hero-parrafo">Con nuestro servicio Premium vos elegís los componentes y nosotros nos encargamos del resto. En <span class="hero-span">GENESIS</span> nos esforzamos para que el armado de tu PC sea una experiencia increíble. ¿Qué estas esperando para tener la PC Gamer que simpre soñaste?</p>
+                <p class="hero-parrafo">Con nuestro servicio Premium vos elegís los componentes y nosotros nos encargamos del resto. En <span class="hero-span">GENESIS</span> nos esforzamos para que el armado de tu PC sea una experiencia increíble. 
+                    <p class="hero-parrafo">¿Qué estas esperando para tener la PC Gamer que siempre soñaste?</p>
+                </p>
                 <a href="#"><button class="hero-btn btn">¡Quiero mi PC!</button></a>
             </div>
             
@@ -68,14 +70,14 @@
 
         </div>
 
-    <hr> 
 
-        <section class="beneficios" #Beneficios>
-
+        <section class="sect-beneficios" id="Beneficios">
+            <h2>Beneficios</h2>
+        <div class="beneficios">
             <div class="beneficio-garantia beneficio">
                 <img src="./imagenes/Beneficio1.png" alt="Garantia" width="150px" height="150px">
                 <H2>Garantia</H2>
-                <p>Todas nuestras PC cuentan con una Garantia de 1 año y Servicio Técnico On-Line gratis por 6 meses</p>
+                <p>Todas nuestras PC cuentan con Garantia de 1 año y Servicio Técnico on-line gratis por 6 meses</p>
             </div>
 
             <div class="beneficio-tiempo beneficio">
@@ -93,10 +95,61 @@
             <div class="beneficio-socio beneficio">
                 <img src="./imagenes/Beneficio4.png" alt="Socio" width="150px" height="150px">
                 <h2>Socio Genesis</h2>
-                <p>Con la compra de una PC armada o Personalizada automáticamente te transformas en Socio Genesis y obtenes 10%OFF en tus siguientes compras</p>
+                <p>Con la compra de una PC armada o Personalizada automáticamente te transformas en Socio-Genesis y obtenes 10% OFF en tus próximas compras</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="sect-productos" id="Productos">
+            <h2>Productos Destacados</h2>
+            <div class="productos-top">
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="./imagenes/Producto1.png" alt="Producto1" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Micro AMD Ryzen 5 5600G 4.4 Ghz AM4</div>
+                    <div class="precio-objeto">$101.750</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
+
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="#" alt="Producto2" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Monitor LED VA 24" Philips 241V8L/77 V-Line FHD 75Hz Adaptative-Sync</div>
+                    <div class="precio-objeto">$52.480</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
+
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="#" alt="Producto3" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Placa de Video Asus Strix RX 5600 XT 6GB GDDR5 (OUTLET) - GARANTIA 3 MESES</div>
+                    <div class="precio-objeto">$108.900</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
             </div>
 
+            <div class="productos-bot">
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="#" alt="Producto4" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Memoria Ram Kingston Fury Beast RGB 16GB 3200 Mhz DDR4</div>
+                    <div class="precio-objeto">$32.680</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
+
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="#" alt="Producto5" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Micro Intel I3-12100 4.3 Ghz 12Mb S.1700
+                    </div>
+                    <div class="precio-objeto">$92.550</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
+
+                <div class="productos-objeto">
+                    <div class="img-objeto"><img src="#" alt="Producto6" width="200px" height="200px"></div>
+                    <div class="descrip-objeto">Monitor LED VA CURVO 24" Samsung Odyssey CRG5 G50 144Hz Freesync</div>
+                    <div class="precio-objeto">$114.300</div>
+                    <div class="btn-objeto"><a href="#">Comprar</a></div>
+                </div>
+            </div>
         </section>
+   
     </main>
 
     <footer></footer>
