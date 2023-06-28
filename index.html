@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Home</title>
-    <link rel="stylesheet" href="./styles.css">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- RESPONSIVE -->
+
+    <!-- ANIMACIONES -->
 </head>
 <body>
     <header>
         <nav class="navbar">
         <div class="navbar-top">
             <div class="navbar-logo">
-                <img src="./imagenes/Logo1.png"  alt="logo" class="logo">
+                <img src="./assets/imagenes/Logo1.png"  alt="logo" class="logo">
             </div>
 
             <div class="navbar-search">
                     <input class="search-input" type="text" placeholder="¿Qué estás buscando?">
-                    <button type="submit" class="search-btn"><img src="./imagenes/Lupa1.png" alt="lupa-search"></button>
+                    <button type="submit" class="search-btn"><img src="./assets/imagenes/Lupa1.png" alt="lupa-search"></button>
             </div>
 
             <div class="navbar-list">
@@ -34,7 +42,7 @@
                     <li><a href="#Home" class="item-list-scroll">Home</a></li>
                     <li><a href="#Beneficios" class="item-list-scroll">Beneficios</a></li>
                     <li><a href="#Productos" class="item-list-scroll">Productos</a></li>
-                    <li><a href="#" class="item-list-scroll">Contacto</a></li>
+                    <li><a href="#Contacto" class="item-list-scroll">Contacto</a></li>
                 </ul>
             </div>
             <!-- <div class="navbar-bot-categorys">
@@ -55,7 +63,8 @@
     </header>
     
     <main>
-        <div class="hero" id="Home">
+        <section id="Home">
+        <div class="hero">
             <div class="hero-info">
                 <h1 class="hero-h1">¡ARMAMOS TU PC!</h1>
                 <p class="hero-parrafo">Con nuestro servicio Premium vos elegís los componentes y nosotros nos encargamos del resto. En <span class="hero-span">GENESIS</span> nos esforzamos para que el armado de tu PC sea una experiencia increíble. 
@@ -65,35 +74,35 @@
             </div>
             
             <div class="hero-video">
-                <video src="./imagenes/Video-Hero.mp4" width="650px" height="400px" autoplay loop class="video-hero"></video>
+                <video src="./assets/imagenes/Video-Hero.mp4" width="650px" height="400px" autoplay loop class="video-hero"></video>
             </div>
 
         </div>
-
+        </section>
 
         <section class="sect-beneficios" id="Beneficios">
             <h2>Beneficios</h2>
         <div class="beneficios">
             <div class="beneficio-garantia beneficio">
-                <img src="./imagenes/Beneficio1.png" alt="Garantia" width="150px" height="150px">
+                <img src="./assets/imagenes/Beneficio1.png" alt="Garantia" width="150px" height="150px">
                 <H2>Garantia</H2>
                 <p>Todas nuestras PC cuentan con Garantia de 1 año y Servicio Técnico on-line gratis por 6 meses</p>
             </div>
 
             <div class="beneficio-tiempo beneficio">
-                <img src="./imagenes/Beneficio2.png" alt="Tiempo Entrega" width="150px" height="150px">
+                <img src="./assets/imagenes/Beneficio2.png" alt="Tiempo Entrega" width="150px" height="150px">
                 <h2>Tiempo de Armado</h2>
                 <p>¡Armamos tu PC en menos de 72hs! Si nos excedemos del tiempo te regalamos un descuento!</p>
             </div>
 
             <div class="beneficio-atencion beneficio">
-                <img src="./imagenes/Beneficio3.png" alt="Atencion Personalizada" width="200px" height="150px">
+                <img src="./assets/imagenes/Beneficio3.png" alt="Atencion Personalizada" width="200px" height="150px">
                 <h2>Atención Personalizada</h2>
                 <p>Vos elegís los componentes y estamos en constante contacto ante cualquier duda o cambio en la PC</p>
             </div>
 
             <div class="beneficio-socio beneficio">
-                <img src="./imagenes/Beneficio4.png" alt="Socio" width="150px" height="150px">
+                <img src="./assets/imagenes/Beneficio4.png" alt="Socio" width="150px" height="150px">
                 <h2>Socio Genesis</h2>
                 <p>Con la compra de una PC armada o Personalizada automáticamente te transformas en Socio-Genesis y obtenes 10% OFF en tus próximas compras</p>
             </div>
@@ -104,21 +113,21 @@
             <h2>Productos Destacados</h2>
             <div class="productos-top">
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="./imagenes/Producto1.png" alt="Producto1" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto1.png" alt="Producto1" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Micro AMD Ryzen 5 5600G 4.4 Ghz AM4</div>
                     <div class="precio-objeto">$101.750</div>
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
                 </div>
 
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="#" alt="Producto2" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto2.png" alt="Producto2" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Monitor LED VA 24" Philips 241V8L/77 V-Line FHD 75Hz Adaptative-Sync</div>
                     <div class="precio-objeto">$52.480</div>
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
                 </div>
 
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="#" alt="Producto3" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto3.png" alt="Producto3" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Placa de Video Asus Strix RX 5600 XT 6GB GDDR5 (OUTLET) - GARANTIA 3 MESES</div>
                     <div class="precio-objeto">$108.900</div>
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
@@ -127,14 +136,14 @@
 
             <div class="productos-bot">
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="#" alt="Producto4" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto4.png" alt="Producto4" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Memoria Ram Kingston Fury Beast RGB 16GB 3200 Mhz DDR4</div>
                     <div class="precio-objeto">$32.680</div>
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
                 </div>
 
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="#" alt="Producto5" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto5.png" alt="Producto5" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Micro Intel I3-12100 4.3 Ghz 12Mb S.1700
                     </div>
                     <div class="precio-objeto">$92.550</div>
@@ -142,16 +151,66 @@
                 </div>
 
                 <div class="productos-objeto">
-                    <div class="img-objeto"><img src="#" alt="Producto6" width="200px" height="200px"></div>
+                    <div class="img-objeto"><img src="./assets/imagenes/Producto6.png" alt="Producto6" width="200px" height="200px"></div>
                     <div class="descrip-objeto">Monitor LED VA CURVO 24" Samsung Odyssey CRG5 G50 144Hz Freesync</div>
                     <div class="precio-objeto">$114.300</div>
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
                 </div>
             </div>
         </section>
-   
-    </main>
 
-    <footer></footer>
+        <section class="contacto" id="Contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-contenido">
+                <div class="contacto-info">
+                    <div>
+                        <ul class="list-info">
+                         <li><i class="fa-solid fa-location-dot"></i> Av. San Martin 1234 - Caseros, Buenos aires</li>
+                         <li><i class="fa-solid fa-location-dot"></i> Av. Mayo y 9 de Julio - CABA</li>
+                         <li><i class="fa-solid fa-phone"></i> (011) 4734-4321</li>
+                         <li><i class="fa-solid fa-envelope"></i> GenesisGaming@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-horarios">
+                         <span>Nuestros Horarios</span>
+                         <li><i class="fa-solid fa-clock"></i> Caseros: LUN a SAB de 09:00hs - 17:00hs</li>
+                         <li><i class="fa-solid fa-clock"></i> CABA: LUN a SAB de 10:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contacto-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9402567311395!2d-58.56165829999999!3d-34.6056722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bcb823bf043593%3A0x5293c3ae7e3a0bbf!2sAv.    %20San%20Mart%C3%ADn%2C%20B1678GQO%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1687906570287!5m2!1ses!2sar" width="400" height="300"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9535866155071!2d-58.381484439677635!3d-34.608855825792766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccad053aeaaab%3A0x9497bc10d8723b12!2sAv.%20de%20Mayo%201000%2C%20C1072%20CABA!5e0!3m2!1ses!2sar!4v1687906692527!5m2!1ses!2sar" width="400"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-ayuda">
+            <ul class="list-ayuda">
+                <span>Ayuda</span>
+                <li>FAQ</li>
+                <li>Tramite Garantía</li>
+                <li>Boton de Arrepentimiento</li>
+            </ul>
+        </div>
+
+        <div class="footer-logo">
+            <img src="./assets/imagenes/Logo1.png" alt="">
+        </div>
+
+        <div class="footer-redes">
+            <ul class="list-redes">
+                <span>Seguinos en Nuestras Redes</span>
+                <li><i class="fa-brands fa-instagram"></i>GeminisGaming</li>
+                <li><i class="fa-brands fa-facebook"></i>Geminis Gaming Hardware</li>
+                <li><i class="fa-brands fa-youtube"></i>Geminis Hardware</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

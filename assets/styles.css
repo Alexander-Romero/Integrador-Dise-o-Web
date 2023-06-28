@@ -163,13 +163,13 @@ main {
 /* HERO */
 .hero {
     width: 90%;
-    height: 600px;
+    height: auto;
     margin: 50px 0px;
     background: var(--secondary);
     border-radius: 20px;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     gap: 100px;
 }
@@ -235,7 +235,7 @@ main {
     margin: 50px 0px;
     border-radius: 20px;
     background: var(--secondary);
-    height: 700px;
+    height: auto;
     padding: 40px 40px;
     gap: 20px;
 }
@@ -261,7 +261,7 @@ main {
     align-items: center;
     gap: 15px;
     padding: 20px;
-    background-color: var(--terciary);
+    background: linear-gradient(#30F2CF,#272d37);
     border-radius: 15px;
 }
 
@@ -286,7 +286,7 @@ main {
     margin: 50px 0px;
     border-radius: 20px;
     background: var(--secondary);
-    height: 800px;
+    height: auto;
     padding: 40px 40px;
     gap: 20px;
 }
@@ -310,33 +310,32 @@ main {
 }
 
 .productos-objeto {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: var(--terciary); */
+    background: var(--background);
     padding: 10px;
     gap: 10px;
-    border: solid 2px;
     border-radius: 10px;
 }
 
 .descrip-objeto {
     color: var(--text-white);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .precio-objeto {
-    color: var(--fire);
+    color: red;
     font-weight: 600;
     font-size: 22px;
 }
 
 .btn-objeto {
     width: 150px;
-    height: 150px;
+    height: 50px;
     background: var(--text-color);
     display: flex;
     justify-content: center;
@@ -347,4 +346,82 @@ main {
 .btn-objeto a {
     color: black;
     font-weight: 600;
+}
+
+/* CONTACTO */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 50px 0px;
+    border-radius: 20px;
+    background: var(--secondary);
+    height: auto;
+    gap: 20px;
+    padding: 40px 40px;
+}
+
+.contacto-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacto h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    color: var(--text-white);
+    gap: 30px;
+}
+
+.fa-solid {
+    font-size: 25px;
+    padding: 5px;
+    color: var(--text-color);
+
+}
+
+.contacto-info span {
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+footer span {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-ayuda ul {
+    padding: 10px;
+    color: var(--text-white);
+}
+
+.footer-redes {
+    padding: 10px;
+    color: var(--text-white);
+}
+
+.fa-brands {
+    padding: 5px;
+    color: var(--text-color);
 }
