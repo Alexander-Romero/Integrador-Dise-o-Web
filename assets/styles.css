@@ -25,7 +25,7 @@ html {
     --text-white: #f3f4f6;
   
     /* Decoration */
-    --fire: #ff6d00;
+    --precio: #ff6d00;
     --electric: #64d3ff;
   }
 
@@ -161,6 +161,14 @@ main {
 
 
 /* HERO */
+
+/* Para centrar Hero */
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero {
     width: 90%;
     height: auto;
@@ -328,7 +336,7 @@ main {
 }
 
 .precio-objeto {
-    color: red;
+    color: var(--precio);
     font-weight: 600;
     font-size: 22px;
 }
@@ -399,26 +407,30 @@ main {
 /* FOOTER */
 footer {
     background-color: var(--nav-bg);
+    height: auto;
+}
+
+.container-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    padding: 0px 50px;
+    color: var(--text-white);
+}
+
+.footer-ayuda, .footer-redes li {
+    cursor: pointer;
+    padding-top: 15px;
+}
+
+#li-ayuda {
+    padding-top: 15px;
 }
 
 footer span {
     color: var(--text-color);
     font-size: 20px;
     font-weight: 600;
-}
-
-.footer-ayuda ul {
-    padding: 10px;
-    color: var(--text-white);
-}
-
-.footer-redes {
-    padding: 10px;
-    color: var(--text-white);
 }
 
 .fa-brands {
