@@ -33,7 +33,7 @@ html {
 .navbar {
     display: flex;
     height: 150px;
-    width: 100%vh;
+    width: 100%;
     background-color: #0f1525;
     flex-direction: column;
 }
@@ -101,9 +101,29 @@ html {
     background: transparent;
 }
 
+/* Login - Register */
+     .navbar-top i {
+        font-size: 40px;
+        display: none;
+    }
+
+    #login-register {
+        display: none;
+    }
+
+/* Menu Hamburguesa */
+    .navbar i {
+        font-size: 40px;
+        display: none;
+    }
+
+    #toggle-menu {
+        display: none;
+    }
+
 .navbar-list {
     height: 100px;
-    width: 25%;
+    width: 30%;
     padding: 10px;
 }
 
@@ -122,19 +142,6 @@ html {
     padding: 10px;
     border-radius: 10px;
 }
-
-/* .list-categorys {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.list-categorys a {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 700;
-} */
 
 .list-scroll {
     display: flex;
@@ -183,7 +190,7 @@ main {
 }
 
 .hero-info {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,13 +230,15 @@ main {
 }
 
 .hero-video {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .video-hero {
+    display: flex;
+    width: 100%;
     border-radius: 200px 0px 200px 0px;
 }
 
@@ -245,7 +254,7 @@ main {
     background: var(--secondary);
     height: auto;
     padding: 40px 40px;
-    gap: 20px;
+    gap: 15px;
 }
 
 .sect-beneficios h2 {
@@ -256,19 +265,20 @@ main {
 }
 
 .beneficios {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 
 .beneficio {
-    width: 20%;
-    height: 100%;
+    width: 24%;
+    max-height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(#30F2CF,#272d37);
     border-radius: 15px;
 }
@@ -283,13 +293,15 @@ main {
 .beneficio p {
     color: var(--text-white);
     font-size: 24px;
+
 }
 
 /* Productos Destacados */
 .sect-productos {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: 50px 0px;
     border-radius: 20px;
@@ -318,11 +330,12 @@ main {
 }
 
 .productos-objeto {
-    width: 50%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center ;
+    justify-content: space-between;
     background: var(--background);
     padding: 10px;
     gap: 10px;
@@ -342,18 +355,30 @@ main {
 }
 
 .btn-objeto {
-    width: 150px;
+    width: 100px;
     height: 50px;
     background: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    border: 0;
 }
 
 .btn-objeto a {
     color: black;
     font-weight: 600;
+}
+
+.sect-productos button {
+    color: black;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    background: var(--text-color);
+    cursor: pointer;
 }
 
 /* CONTACTO */
@@ -370,10 +395,11 @@ main {
 }
 
 .contacto-contenido {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .contacto h2 {
@@ -404,6 +430,18 @@ main {
     font-weight: 600;
 }
 
+.contacto-map {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.map {
+    width: 50%;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--nav-bg);
@@ -420,7 +458,7 @@ footer {
 
 .footer-ayuda, .footer-redes li {
     cursor: pointer;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 #li-ayuda {

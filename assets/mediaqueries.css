@@ -1,0 +1,198 @@
+/* Tablet */
+
+@media (max-width: 992px) {
+/* NAVBAR */
+    .navbar-list ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+/* HERO */
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-info {
+        width: 100%;
+        height: 20%;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: 80%;
+    }
+
+    .video-hero{
+        border-radius: 20px;
+    }
+
+/* BENEFICIOS */
+    .beneficio {
+        height: 500px;
+    }
+
+    .beneficio h2{
+        font-size: 24px;
+    }
+
+    .beneficio p {
+        font-size: 16px;
+    }
+
+    /* CONTACTO */
+    .contacto-contenido {
+    flex-direction: column;
+    }
+
+    .contacto-info{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        gap: 80px;
+    }
+
+    .contacto-map {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+/* BENEFICIOS */
+    .beneficios {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        gap: 30px;
+    }
+
+    .beneficio {
+        width: 90%;
+        height: 300px;
+    }
+
+/* PRODUCTOS */
+    .productos-top, .productos-bot {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* CONTACTO */
+    .fa-solid {
+        font-size: 15px;
+    }
+
+/* FOOTER */
+    .container-footer {
+        padding: 0px 20px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+        border: solid #30F2CF;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    /* NAVBAR */
+
+    .navbar-search {
+        display: none;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    /* LOgin - Register */
+    .navbar-list {
+        background:#0f1525;
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        display: none;
+    }
+
+    .navbar-top i {
+        display: block;
+    }
+
+    #login-register:checked ~ .navbar-list{
+        display: flex;
+    }
+
+    /* Menu Hamburguesa */
+    .navbar-bot ul {
+        background:#0f1525;
+        width: 100%;
+        height: calc(100vh - 150px);
+        position: absolute;
+        top: 150px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .navbar i {
+        display: flex;
+        justify-content: end;
+    }
+
+    #toggle-menu:checked ~ .navbar-bot ul {
+        display: flex;
+
+    }
+
+/* HERO */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .sect-beneficios h2 {
+        font-size: 32px;
+    }
+
+    .beneficio h2 {
+        font-size: 32px;
+    }
+
+    .beneficio {
+        width: 100%;
+        height: 450px;
+    }
+
+
+    .contacto-info, .contacto-redes {
+        flex-direction: column;
+    }
+
+    .contacto-map {
+        flex-direction: column;
+        width: 300px;
+    }
+
+}

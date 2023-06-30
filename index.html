@@ -10,54 +10,48 @@
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- RESPONSIVE -->
-
     <!-- ANIMACIONES -->
+    
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-        <div class="navbar-top">
-            <div class="navbar-logo">
-                <a href="./index.html"><img src="./assets/imagenes/Logo1.png"  alt="logo" class="logo"></a>
-            </div>
 
-            <div class="navbar-search">
-                    <input class="search-input" type="text" placeholder="¿Qué estás buscando?">
-                    <button type="submit" class="search-btn"><img src="./assets/imagenes/Lupa1.png" alt="lupa-search"></button>
-            </div>
+            <div class="navbar-top">
+                <div class="navbar-logo">
+                    <a href="./index.html"><img src="./assets/imagenes/Logo1.png"  alt="logo" class="logo"></a>
+                </div>
 
-            <div class="navbar-list">
-                <ul>
-                    <li ><a href="./assets/login.html" class="item-navbar-list">Iniciar Sesión</a></li>
-                    <li ><a href="./assets/register.html" class="item-navbar-list">Registarse</a></li>
-                </ul>
-            </div>
+                <div class="navbar-search">
+                        <input id="search" class="search-input" type="text" placeholder="¿Qué estás buscando?">
+                        <label for="search"><button type="submit" class="search-btn"><img src="./assets/imagenes/Lupa1.png" alt="lupa-search"></button></label>
+                </div>
 
-        </div>
-    <hr>
-         <div class="navbar-bot">
-            <div class="nav-scroll">
-                <ul class="list-scroll">
-                    <li><a href="#Home" class="item-list-scroll">Home</a></li>
-                    <li><a href="#Beneficios" class="item-list-scroll">Beneficios</a></li>
-                    <li><a href="#Productos" class="item-list-scroll">Productos</a></li>
-                    <li><a href="#Contacto" class="item-list-scroll">Contacto</a></li>
-                </ul>
-            </div>
-            <!-- <div class="navbar-bot-categorys">
-                <ul class="list-categorys">
-                    <li><a href="#" class="item-navbar-list-categorys">PC Armadas</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Procesadores</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Motherboard</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Almacenamiento</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Memoria RAM</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Placas de Video</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Monitores</a></li>
-                    <li><a href="#" class="item-navbar-list-categorys">Perifericos</a></li>
-                </ul>
-            </div> -->
-          </div>
+                <label for="login-register"><i class="fa-solid fa-user"></i></label>
+                <input type="checkbox" id="login-register"/>
+
+                <div class="navbar-list">
+                    <ul>
+                        <li ><a href="./assets/login.html" class="item-navbar-list">Iniciar Sesión</a></li>
+                        <li ><a href="./assets/register.html" class="item-navbar-list">Registarse</a></li>
+                    </ul>
+                </div>
+
+             </div>
+
+    <hr class="hr">
+             <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+             <input type="checkbox" id="toggle-menu"/>
+             <div class="navbar-bot">
+                    <ul class="list-scroll">
+                        <li><a href="#Home" class="item-list-scroll">Home</a></li>
+                        <li><a href="#Beneficios" class="item-list-scroll">Beneficios</a></li>
+                        <li><a href="#Productos" class="item-list-scroll">Productos</a></li>
+                        <li><a href="#Contacto" class="item-list-scroll">Contacto</a></li>
+                 </ul>
+              </div>
         </nav>
         
     </header>
@@ -74,7 +68,7 @@
              </div>
             
              <div class="hero-video">
-                 <video src="./assets/imagenes/Video-Hero.mp4" width="650px"     height="400px" autoplay loop class="video-hero"></video>
+                 <video src="./assets/imagenes/Video-Hero.mp4" autoplay loop class="video-hero"></video>
              </div>
 
             </div>
@@ -83,29 +77,29 @@
         <section class="sect-beneficios" id="Beneficios">
             <h2>Beneficios</h2>
         <div class="beneficios">
-            <div class="beneficio-garantia beneficio">
-                <img src="./assets/imagenes/Beneficio1.png" alt="Garantia" width="150px" height="150px">
-                <H2>Garantia</H2>
-                <p>Todas nuestras PC cuentan con Garantia de 1 año y Servicio Técnico on-line gratis por 6 meses</p>
-            </div>
+                <div class="beneficio-garantia beneficio">
+                    <img src="./assets/imagenes/Beneficio1.png" alt="Garantia"  width="150px" height="150px">
+                    <H2>Garantia</H2>
+                    <p>Todas nuestras PC cuentan con Garantia de 1 año y Servicio   Técnico on-line gratis por 6 meses</p>
+                </div>
 
-            <div class="beneficio-tiempo beneficio">
-                <img src="./assets/imagenes/Beneficio2.png" alt="Tiempo Entrega" width="150px" height="150px">
-                <h2>Tiempo de Armado</h2>
-                <p>¡Armamos tu PC en menos de 72hs! Si nos excedemos del tiempo te regalamos un descuento!</p>
-            </div>
+                <div class="beneficio-tiempo beneficio">
+                    <img src="./assets/imagenes/Beneficio2.png" alt="Tiempo Entrega"    width="150px" height="150px">
+                    <h2>Tiempo de Armado</h2>
+                    <p>¡Armamos tu PC en menos de 72hs! Si nos excedemos del tiempo te  regalamos un descuento!</p>
+                </div>
+           
+                <div class="beneficio-atencion beneficio">
+                    <img src="./assets/imagenes/Beneficio3.png" alt="Atencion   Personalizada" width="200px" height="150px">
+                    <h2>Atención Profesional</h2>
+                    <p>Vos elegís los componentes y estamos en constante contacto ante  cualquier duda o cambio en la PC</p>
+                </div>
 
-            <div class="beneficio-atencion beneficio">
-                <img src="./assets/imagenes/Beneficio3.png" alt="Atencion Personalizada" width="200px" height="150px">
-                <h2>Atención Personalizada</h2>
-                <p>Vos elegís los componentes y estamos en constante contacto ante cualquier duda o cambio en la PC</p>
-            </div>
-
-            <div class="beneficio-socio beneficio">
-                <img src="./assets/imagenes/Beneficio4.png" alt="Socio" width="150px" height="150px">
-                <h2>Socio Genesis</h2>
-                <p>Con la compra de una PC armada o Personalizada automáticamente te transformas en Socio-Genesis y obtenes 10% OFF en tus próximas compras</p>
-            </div>
+                <div class="beneficio-socio beneficio">
+                    <img src="./assets/imagenes/Beneficio4.png" alt="Socio"     width="150px" height="150px">
+                    <h2>Socio Genesis</h2>
+                    <p>Con la compra de una PC armada o Personalizada automáticamente   te transformas en Socio-Genesis y obtenes 10% OFF en tus próximas     compras</p>
+                </div>
         </div>
         </section>
 
@@ -157,6 +151,7 @@
                     <div class="btn-objeto"><a href="#">Comprar</a></div>
                 </div>
             </div>
+            <button>Ver más</button> 
         </section>
 
         <section class="contacto" id="Contacto">
@@ -181,8 +176,8 @@
                 </div>
 
                 <div class="contacto-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9402567311395!2d-58.56165829999999!3d-34.6056722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bcb823bf043593%3A0x5293c3ae7e3a0bbf!2sAv.    %20San%20Mart%C3%ADn%2C%20B1678GQO%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1687906570287!5m2!1ses!2sar" width="400" height="300"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9535866155071!2d-58.381484439677635!3d-34.608855825792766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccad053aeaaab%3A0x9497bc10d8723b12!2sAv.%20de%20Mayo%201000%2C%20C1072%20CABA!5e0!3m2!1ses!2sar!4v1687906692527!5m2!1ses!2sar" width="400"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9402567311395!2d-58.56165829999999!3d-34.6056722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bcb823bf043593%3A0x5293c3ae7e3a0bbf!2sAv.    %20San%20Mart%C3%ADn%2C%20B1678GQO%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1687906570287!5m2!1ses!2sar" width="400" height="300"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9535866155071!2d-58.381484439677635!3d-34.608855825792766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccad053aeaaab%3A0x9497bc10d8723b12!2sAv.%20de%20Mayo%201000%2C%20C1072%20CABA!5e0!3m2!1ses!2sar!4v1687906692527!5m2!1ses!2sar" width="400"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
